@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+@font-face{
+    font-family: BarlowCondensed;
+    src: url('fonts/BarlowCondensed-Regular.ttf');
+}
+@font-face{
+    font-family: Barlow;
+    src: url('fonts/Barlow-Regular.ttf');
+}
+@font-face{
+    font-family: Bellefair;
+    src: url('fonts/Bellefair-Regular.ttf');
+}
+
+body{
+    background-image: url('images/Bitmap.png');
+    background-size: cover;
+}
+
+
+.main-div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+}
+
+.hero #content-1{
+    font-family: BarlowCondensed;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4.72px; 
+    color: #D0D6F9;
+}
+
+.hero #content-2{
+    font-family: Bellefair;
+    font-weight: 400;
+    font-size: 150px;
+}
+
+.hero #content-3{
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    color: #D0D6F9;
+}
+
+.explore{
+    background-color: white;
+    height: 274px;
+    width: 274px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    margin-top: 30px;
+}
+.explore #explore{
+    font-family: Bellefair;
+    color: #0B0D17;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* ------------------------Header Leptop Responsive----------------------------------- */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body{
+        background-image: url('images/Bitmap-mobile.png');
+        background-size: cover;
+    }
+    .main-div{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        padding-top: 150px;
+        flex-direction: column;
+    }
+
+    .hero #content-1{
+        display: flex;
+        justify-content: center;
+        font-family: BarlowCondensed;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 3.38px; 
+        color: #D0D6F9;
+    }
+    .hero #content-2{
+        display: flex;
+        justify-content: center;
+        font-family: Bellefair;
+    }
+    .hero #content-3{
+        display: flex;
+        justify-content: center;
+        font-family: Barlow;
+        font-size: 16px;
+    }
+    .explore{
+        display: flex;
+        justify-content: center;
+        margin-left: 100px;
+    }
+}
+
+
+/* ------------------------Header Tablets Responsive----------------------------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body{
+        background-image: url('images/Bitmap-mobile.png');
+        background-size: cover;
+    }
+    .main-div{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        padding-top: 150px;
+        flex-direction: column;
+    }
+
+    .hero #content-1{
+        display: flex;
+        justify-content: center;
+        font-family: BarlowCondensed;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 3.38px; 
+        color: #D0D6F9;
+    }
+    .hero #content-2{
+        display: flex;
+        justify-content: center;
+        font-family: Bellefair;
+    }
+    .hero #content-3{
+        display: flex;
+        justify-content: center;
+        font-family: Barlow;
+        font-size: 16px;
+    }
+    .explore{
+        display: flex;
+        justify-content: center;
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+}
+
+/* ------------------------Header Mobile Responsive----------------------------------- */   
+@media (min-width: 481px) and (max-width: 767px) {
+    body{
+        background-image: url('images/Bitmap-mobile.png');
+        background-size: cover;
+    }
+    .main-div{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        padding-top: 150px;
+        flex-direction: column;
+    }
+
+    .hero #content-1{
+        display: flex;
+        justify-content: center;
+        font-family: BarlowCondensed;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2.7px; 
+        color: #D0D6F9;
+    }
+
+    .hero #content-2{
+        display: flex;
+        font-size: 80px;
+        justify-content: center;
+        font-family: Bellefair;
+    }
+
+    .hero #content-3{
+        display: flex;
+        justify-content: center;
+        font-family: Barlow;
+        font-size: 15px;
+    }
+    .explore{
+        display: flex;
+        justify-content: center;
+        margin-left: 45px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    body{
+        background-image: url('images/Bitmap-mobile.png');
+        background-size: cover;
+    }
+    .main-div{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        padding-top: 150px;
+        flex-direction: column;
+    }
+
+    .hero #content-1{
+        display: flex;
+        justify-content: center;
+        font-family: BarlowCondensed;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2.7px; 
+        color: #D0D6F9;
+    }
+
+    .hero #content-2{
+        display: flex;
+        font-size: 80px;
+        justify-content: center;
+        font-family: Bellefair;
+    }
+
+    .hero #content-3{
+        display: flex;
+        justify-content: center;
+        font-family: Barlow;
+        font-size: 15px;
+    }
+    .explore{
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+    }
+}

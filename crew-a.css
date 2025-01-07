@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: BarlowCondensed;
+    src: url('fonts/BarlowCondensed-Regular.ttf');
+}
+@font-face{
+    font-family: Bellefair;
+    src: url('fonts/Bellefair-Regular.ttf');
+}
+@font-face{
+    font-family: Barlow;
+    src: url('fonts/Barlow-Regular.ttf');
+}
+
+body{
+    background-image: url('images/moon-background.png');
+    background-size: cover;
+    
+}
+
+#craw-a-hero{
+    font-family: BarlowCondensed;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 20px;
+    padding-left: 130px; 
+    letter-spacing: 4.72px;
+    padding-top: 40px;
+}
+
+#craw-a-hero span{
+    color: white;
+    opacity: .50;
+}
+
+.craw-a-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.craw-a-hero-right img{
+    width: 558.07px;
+    height: 600px;
+    display: flex;
+    align-content: flex-end;
+}
+
+#row-1{
+    font-family: Bellefair;
+    font-size: 32px;
+    font-weight: 400;
+    opacity: 0.50; 
+    padding-bottom: 10px; 
+}
+
+#row-2{
+    font-family: Bellefair;
+    font-size: 56px;
+    font-weight: 400;
+    padding-bottom: 20px; 
+}
+
+#row-3{
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 400;
+    color: #D0D6F9; 
+}
+
+/* -------------------------------------Tablets------------------------------------------ */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .craw-a-container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    
+    #row-1{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #row-2{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #row-3{
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #craw-a-hero{
+        padding-left: 50px;
+        font-size: 20px;
+    }
+
+    .craw-a-hero-right img{
+        width: 456.37px;
+        height: 572px;
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .craw-a-container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    
+    #row-1{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #row-2{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #row-3{
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #craw-a-hero{
+        padding-left: 50px;
+        font-size: 20px;
+    }
+
+    .craw-a-hero-right img{
+        width: 456.37px;
+        height: 572px;
+        padding-top: 40px;
+    }    
+}
+  
+
+/* -------------------------------------Mobiles---------------------------------------- */
+@media (min-width: 481px) and (max-width: 767px) {
+    #craw-a-hero{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+        padding-left: 0px;
+        font-size: 16px;
+    }
+
+    #craw-a-hero span{
+        padding-right: 10px;
+    }
+    
+    .craw-a-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .craw-a-hero-right img{
+        height: 222px;
+        width: 177.12px;
+        border-bottom: 1px solid #383B4B;
+        margin-bottom:40px;
+    }
+
+    #row-1{
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #row-2{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #row-3{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        color: #D0D6F9;
+        padding-bottom: 40px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #craw-a-hero{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+        padding-left: 0px;
+        font-size: 16px;
+    }
+
+    #craw-a-hero span{
+        padding-right: 10px;
+    }
+    
+    .craw-a-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .craw-a-hero-right img{
+        height: 222px;
+        width: 177.12px;
+        border-bottom: 1px solid #383B4B;
+        margin-bottom:40px;
+    }
+
+    #row-1{
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #row-2{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #row-3{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        color: #D0D6F9;
+        padding-bottom: 40px;
+    }
+
+}

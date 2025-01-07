@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;  
+    position: relative; 
+}
+
+.logo img{
+    height: 48px;
+    width: 48px;
+}
+
+.line{
+    border: 1px solid white;
+    width: 640px;
+    left: 200px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.25;
+}
+
+.menubar{
+    background-color: rgba(211, 190, 190, 0);
+    backdrop-filter: blur(80px);
+    padding: 30px 160px 30px  70px; 
+}
+
+.menubar ul{
+    display: flex;
+    gap: 40px;
+}
+
+.menubar li{
+    list-style: none;
+    
+}
+
+@font-face{
+    font-family: BarlowCondensed;
+    src: url('fonts/BarlowCondensed-Regular.ttf');
+}
+
+.menubar a{
+    text-decoration: none;
+    font-family: BarlowCondensed;
+    word-spacing: 5px;  
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.menubar a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -30px;
+    transition: 0.5s;
+}
+
+.menubar a:hover:after{
+    width: 100%;
+}
+
+
+/* ------------------------Header leptop Responsive----------------------------------- */
+@media (min-width: 1456px) and (max-width: 1496px) {
+    .line{
+        width: 580px;
+    }
+}
+
+@media (min-width: 1437px) and (max-width: 1456px) {
+    .line{
+        width: 560px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1437px) {
+    .line{
+        width: 530px;
+    }
+}
+
+@media (min-width: 1380px) and (max-width: 1400px) {
+    .line{
+        width: 500px;
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1380px) {
+    .line{
+        width: 470px;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1350px) {
+    .line{
+        width: 420px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1300px) {
+    .line{
+        width: 400px;
+    }
+}
+
+/* ------------------------Header tablet Responsive----------------------------------- */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container{
+        padding-top: 0px; 
+    }
+
+    .menubar{
+        background-color: rgba(211, 190, 190, 0);
+        backdrop-filter: blur(80px);
+        padding: 30px 30px 30px  40px; 
+    }       
+
+    .line{
+        width: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        padding-top: 0px; 
+    }
+
+    .menubar{
+        background-color: rgba(211, 190, 190, 0);
+        backdrop-filter: blur(80px);
+        padding: 30px 30px 30px  40px; 
+    }       
+
+    .line{
+        width: 0px;
+    }
+
+    .menubar ul{
+        gap: 30px;
+    }
+    
+    .menubar a{  
+        letter-spacing: 1px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+}
+
+
+/* ------------------------Header Mobile Responsive----------------------------------- */
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container{
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container{
+        display: none;
+    }
+}

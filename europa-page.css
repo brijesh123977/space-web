@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: BarlowCondensed;
+    padding-left: 15px;
+    padding-right:15px;
+}
+@font-face{
+    font-family: BarlowCondensed;
+    src: url('fonts/BarlowCondensed-Regular.ttf');
+}
+
+body{
+    background-image: url('images/moon-background.png');
+    background-size: cover;
+    padding-bottom: 40px;
+}
+
+
+@font-face{
+    font-family: BarlowCondensed;
+    src: url('fonts/BarlowCondensed-Regular.ttf');
+}
+@font-face{
+    font-family: Bellefair;
+    src: url('fonts/Bellefair-Regular.ttf');
+}
+@font-face{
+    font-family: Barlow;
+    src: url('fonts/Barlow-Regular.ttf');
+}
+
+
+#moon-hero{
+    font-family: BarlowCondensed;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 20px;
+    padding-left: 130px; 
+}
+
+#moon-hero span{
+    color: white;
+    opacity: .50;
+}
+
+.moon-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.moon-hero-left img{
+    height: 435px;
+    width: 435px;
+}
+
+.moon-hero-right-menubar ul{
+    display: flex;
+    gap: 20px;
+}
+
+.moon-hero-right-menubar li{
+    list-style: none;
+}
+
+.moon-hero-right-menubar a{
+    text-decoration: none;
+    color: #D0D6F9;
+    position: relative;
+}
+
+.moon-hero-right-menubar a:hover{
+    color: white;
+}
+
+.moon-hero-right-menubar a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: white;
+    transition: all .5s;
+}
+
+.moon-hero-right-menubar a:hover::before{
+    width: 100%;
+}
+
+#content-1{
+    font-family: Bellefair;
+    font-weight: 400;
+    font-size: 100px;
+    padding-top: 30px;
+}
+
+#content-2{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Barlow;
+    color: #D0D6F9;
+}
+  
+
+.horizontal-line{
+    border: 1px solid #383B4B;
+    width: 440px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.moon-hero-right-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-1{
+    font-family: BarlowCondensed;
+    letter-spacing: 2.36px;
+    color: #D0D6F9;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+#left-2{
+    font-family: Bellefair;
+    font-weight: 400;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+/* ------------------------Header Tablets Responsive----------------------------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body{
+        background-image: url('images/Bitmap-moon-mobile.png');
+        background-size: cover;
+        padding-bottom: 40px;
+    }
+    #moon-hero{
+        padding-left: 50px;
+        font-size: 20px;
+    }
+
+    .moon-hero-right-menubar a{
+        text-decoration: none;
+        color: #D0D6F9;
+        position: relative;
+        font-size: 16px;
+    }
+
+    #content-1{
+        font-size: 80px;
+    }
+    #content-2{
+        font-size: 16px;
+    }
+
+    #left-1{
+        font-size: 14px;
+    }
+    #left-2{
+        font-size: 28px;
+    }
+
+    .moon-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .moon-hero-left img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .moon-hero-left{
+        display: flex;
+        justify-content: center;
+    }
+
+    .moon-hero-right-menubar{
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .moon-hero-right-content #content-1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .moon-hero-right-content #content-2{
+        display: flex;
+        justify-content: center;
+    }
+}
+/* --------------------------------Header Mobile Responsive----------------------------- */
+@media (min-width: 481px) and (max-width: 767px) {
+    body{
+        background-image: url('images/Bitmap-moon-mobile.png');
+        background-size: cover;
+        padding-bottom: 40px;
+    }
+    #moon-hero{
+        padding-left: 50px;
+        font-size: 20px;
+    }
+
+    .moon-hero-right-menubar a{
+        text-decoration: none;
+        color: #D0D6F9;
+        position: relative;
+        font-size: 16px;
+    }
+
+    #content-1{
+        font-size: 80px;
+    }
+    #content-2{
+        font-size: 16px;
+    }
+
+    #left-1{
+        font-size: 14px;
+    }
+    #left-2{
+        font-size: 28px;
+    }
+
+    .moon-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .moon-hero-left img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .moon-hero-left{
+        display: flex;
+        justify-content: center;
+    }
+
+    .moon-hero-right-menubar{
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .moon-hero-right-content #content-1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .moon-hero-right-content #content-2{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    body{
+        background-image: url('images/Bitmap-moon-mobile.png');
+        background-size: cover;
+        padding-bottom: 40px;
+    }
+    #moon-hero{
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        padding-left: 0px;
+    }
+    .moon-hero-left img{
+        height: 170px;
+        width: 170px;
+        display: flex;
+        justify-content: center;
+    }
+    .moon-hero-right-menubar a{
+       font-size: 14px;
+    }
+    #content-1{
+        font-size: 56px;
+    }
+    #content-2{
+        font-size: 15px;
+    }
+    #left-1{
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+    #left-2{
+        font-size: 28px;
+    }
+    .moon-hero-right-footer{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column; 
+    }
+    .moon-hero-right-footer-left{
+        padding-bottom: 30px;
+    }
+    #content-1{
+        padding-top: 20px;
+    }
+    .horizontal-line{
+        margin-top:30px;
+    }
+}
