@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: BarlowCondensed;
+    src: url('fonts/BarlowCondensed-Regular.ttf');
+}
+@font-face{
+    font-family: Barlow;
+    src: url('fonts/Barlow-Regular.ttf');
+}
+@font-face{
+    font-family: Bellefair;
+    src: url('fonts/Bellefair-Regular.ttf');
+}
+
+body{
+    background-image: url('images/Bitmap-technology.png');
+    background-size: cover;
+}
+
+#technology-hero{
+    font-family: BarlowCondensed;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 20px;
+    padding-left: 130px;
+    letter-spacing: 4.72px;
+}
+
+#technology-hero span{
+    color: white;
+    opacity: .50;
+}
+
+.technology-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top:90px;
+    padding-bottom:90px;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+.button p{
+    color: black;
+    font-size: 32px;
+    font-family: Bellefair;
+    width:60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 40%; 
+}
+
+.technology-hero-left{
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+}
+
+#con-1{
+    font-family: BarlowCondensed;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    padding-bottom: 20px;
+}
+
+#con-2{
+    font-family: Bellefair;
+    font-size: 56px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+#con-3{
+    font-family: Barlow;
+    font-size: 18px;
+    color: #D0D6F9;
+}
+
+
+.leptop-launch-image{
+    height: 527px;
+    width: 500px;
+}
+.tablet-launch-image{
+    display: none;
+}
+
+
+/* ----------------------------------------tablets----------------------------------------- */
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    body{
+        background-image: url('images/Bitmap-tech-tablet.png');
+        background-size: cover;
+    }
+    #technology-hero{
+        font-size: 16px;
+        margin-top: 30px;
+        padding-left: 0px;
+        letter-spacing: 2.7px;
+    }
+    .technology-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding-top:90px;
+        padding-bottom:90px;
+    }
+  
+    .technology-hero-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        padding-left: 0px;
+    }
+
+    .leptop-launch-image{
+        display: none;
+    }
+
+    .tablet-launch-image{
+        width: 100%;
+        display:block;
+        padding-bottom: 40px;
+    }
+
+    .button{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #con-1{
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+    #con-2{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    }
+    #con-3{
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  
+    body{
+        background-image: url('images/Bitmap-tech-tablet.png');
+        background-size: cover;
+    }
+    #technology-hero{
+        font-size: 20px;
+        margin-top: 40px;
+        padding-left: 60px;
+        letter-spacing: 3.38px;
+    }
+    .technology-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding-top:90px;
+        padding-bottom:90px;
+    }
+  
+    .technology-hero-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        padding-left: 0px;
+    }
+
+    .leptop-launch-image{
+        display: none;
+    }
+
+    .tablet-launch-image{
+        width: 100%;
+        display:block;
+        padding-bottom: 40px;
+    }
+
+    .button{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #con-1{
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+    #con-2{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+    }
+    #con-3{
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+    }
+}
+  
+
+/* --------------------------------------Mobile---------------------------------------- */
+@media (min-width: 481px) and (max-width: 767px) {
+    body{
+        background-image: url('images/Bitmap-tech-tablet.png');
+        background-size: cover;
+    }
+    #technology-hero{
+        font-size: 20px;
+        margin-top: 40px;
+        padding-left: 0px;
+        letter-spacing: 3.38px;
+        display: flex;
+        justify-content: center;
+    }
+    #technology-hero span{
+        color: white;
+        opacity: .50;
+        padding-right: 10px;
+    }
+    .technology-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding-top:50px;
+        padding-bottom:90px;
+    }
+  
+    .technology-hero-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        padding-left: 0px;
+    }
+
+    .leptop-launch-image{
+        display: none;
+    }
+
+    .tablet-launch-image{
+        width: 100%;
+        display:block;
+        padding-bottom: 40px;
+    }
+
+    .button{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .button p{
+        font-size: 16px;
+        font-family: Bellefair;
+        width:40px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        opacity: 40%; 
+    }
+    #con-1{
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+    #con-2{
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+    }
+    #con-3{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    } 
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body{
+        background-image: url('images/Bitmap-tech-tablet.png');
+        background-size: cover;
+    }
+    #technology-hero{
+        font-size: 20px;
+        margin-top: 40px;
+        padding-left: 0px;
+        letter-spacing: 3.38px;
+        display: flex;
+        justify-content: center;
+    }
+    #technology-hero span{
+        color: white;
+        opacity: .50;
+        padding-right: 10px;
+    }
+    .technology-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding-top:50px;
+        padding-bottom:90px;
+    }
+  
+    .technology-hero-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; 
+        padding-left: 0px;
+    }
+
+    .leptop-launch-image{
+        display: none;
+    }
+
+    .tablet-launch-image{
+        width: 100%;
+        display:block;
+        padding-bottom: 40px;
+    }
+
+    .button{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .button p{
+        font-size: 16px;
+        font-family: Bellefair;
+        width:40px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        opacity: 40%; 
+    }
+    #con-1{
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+    #con-2{
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+    }
+    #con-3{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    } 
+}
