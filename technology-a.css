@@ -39,7 +39,7 @@ body{
 .technology-container{
     display: flex;
     justify-content: space-between;
-    padding-top:90px;
+    padding-top:50px;
     padding-bottom:90px;
 }
 
@@ -94,8 +94,8 @@ body{
 
 
 .leptop-launch-image{
-    height: 527px;
-    width: 500px;
+    height: 400px;
+    width: 380px;
 }
 .tablet-launch-image{
     display: none;

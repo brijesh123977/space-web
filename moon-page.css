@@ -6,6 +6,12 @@
     font-family: BarlowCondensed;
     padding-left: 15px;
     padding-right:15px;
+    /* ::-webkit-scrollbar{
+        display: none;
+    }
+    {
+        scrollbar-width: none;
+    } */
 }
 @font-face{
     font-family: BarlowCondensed;
@@ -49,12 +55,12 @@ body{
 .moon-container{
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .moon-hero-left img{
-    height: 435px;
-    width: 435px;
+    height: 400px;
+    width: 400px;
     animation: x 20.5s infinite linear;
 }
 @keyframes x{

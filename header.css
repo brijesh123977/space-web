@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    {
+        scrollbar-width: none;
+    }
 }
 
 .container{
@@ -58,7 +64,7 @@
     position: relative;
 }
 
-.menubar a:after{
+/* .menubar a:after{
     content: "";
     position: absolute;
     background-color: white;
@@ -71,6 +77,11 @@
 
 .menubar a:hover:after{
     width: 100%;
+} */
+a.activeLink
+{
+    border-bottom: 5px solid white;
+    padding-bottom: 29px;
 }
 
 
@@ -180,3 +191,11 @@
         display: none;
     }
 }
+
+/* ----------------------------------------large screen------------------------------------ */
+@media (min-width: 1550px) and (max-width: 1651px){
+    .line{
+        width:750px;
+    }
+}
+  
